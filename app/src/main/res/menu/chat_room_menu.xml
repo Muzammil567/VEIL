@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/menu_switch_persona"
+        android:icon="@drawable/ic_personas"
+        android:title="Switch Persona"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/menu_room_info"
+        android:title="Room Info"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/menu_leave_room"
+        android:title="Leave Room"
+        app:showAsAction="never" />
+
+</menu>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/menu_search"
+        android:icon="@drawable/ic_search"
+        android:title="Search"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/menu_create_whisper"
+        android:icon="@drawable/ic_whisper"
+        android:title="Whisper"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/menu_voice_call"
+        android:icon="@drawable/ic_call"
+        android:title="Call"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/menu_secret_inbox"
+        android:icon="@drawable/ic_lock"
+        android:title="Secret"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/menu_privacy_settings"
+        android:title="Privacy Settings"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/menu_app_lock"
+        android:title="App Lock"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/menu_logout"
+        android:title="Logout"
+        app:showAsAction="never" />
+
+</menu>

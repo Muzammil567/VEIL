@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/veil_background"
+    android:padding="16dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Your Personas"
+        android:textColor="@color/veil_text_primary"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Switch between different identities"
+        android:textColor="@color/veil_text_secondary"
+        android:textSize="14sp"
+        android:layout_marginTop="4dp" />
+
+    <!-- Status Message -->
+    <TextView
+        android:id="@+id/tvStatus"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Switched to persona"
+        android:textColor="@color/veil_secondary"
+        android:textSize="12sp"
+        android:gravity="center"
+        android:padding="8dp"
+        android:visibility="gone" />
+
+    <!-- Add Persona Button -->
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnAddPersona"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Create New Persona"
+        android:layout_marginTop="24dp"
+        android:textColor="@color/white"
+        android:backgroundTint="@color/veil_secondary"
+        style="@style/Widget.Material3.Button" />
+
+    <!-- Personas List -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvPersonas"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginTop="16dp" />
+
+    <TextView
+        android:id="@+id/tvNoPersonas"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:text="No personas created yet\nCreate your first persona to start chatting!"
+        android:textColor="@color/veil_text_secondary"
+        android:textSize="14sp"
+        android:gravity="center"
+        android:padding="32dp"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/tvError"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/veil_secondary"
+        android:textSize="14sp"
+        android:gravity="center"
+        android:padding="8dp"
+        android:visibility="gone" />
+
+</LinearLayout>

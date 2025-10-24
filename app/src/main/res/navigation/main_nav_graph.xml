@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_nav_graph"
+    app:startDestination="@id/navigation_home">
+
+    <!-- Main Fragments -->
+    <fragment
+        android:id="@+id/navigation_home"
+        android:name="com.m3.veilchat.fragments.HomeFragment"
+        android:label="Home"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/navigation_chats"
+        android:name="com.m3.veilchat.fragments.ChatsFragment"
+        android:label="Chats"
+        tools:layout="@layout/fragment_chats" />
+
+    <fragment
+        android:id="@+id/navigation_discover"
+        android:name="com.m3.veilchat.fragments.DiscoverFragment"
+        android:label="Discover"
+        tools:layout="@layout/fragment_discover" />
+
+    <fragment
+        android:id="@+id/navigation_personas"
+        android:name="com.m3.veilchat.fragments.PersonasFragment"
+        android:label="Personas"
+        tools:layout="@layout/fragment_personas" />
+
+    <fragment
+        android:id="@+id/navigation_profile"
+        android:name="com.m3.veilchat.fragments.ProfileFragment"
+        android:label="Profile"
+        tools:layout="@layout/fragment_profile" />
+
+    <fragment
+        android:id="@+id/navigation_confessions"
+        android:name="com.m3.veilchat.fragments.ConfessionBoardFragment"
+        android:label="Confessions"
+        tools:layout="@layout/fragment_confession_board" />
+
+    <fragment
+        android:id="@+id/navigation_secret_inbox"
+        android:name="com.m3.veilchat.fragments.SecretInboxFragment"
+        android:label="Secret Inbox"
+        tools:layout="@layout/fragment_secret_inbox" />
+
+    <!-- Chat Room -->
+    <fragment
+        android:id="@+id/chatRoom"
+        android:name="com.m3.veilchat.fragments.ChatRoomFragment"
+        android:label="Chat Room" />
+
+    <!-- Private Chat -->
+    <fragment
+        android:id="@+id/privateChat"
+        android:name="com.m3.veilchat.fragments.PrivateChatFragment"
+        android:label="Private Chat" />
+
+    <!-- Voice Call Activity -->
+    <activity
+        android:id="@+id/voiceCall"
+        android:name="com.m3.veilchat.activities.VoiceCallActivity"
+        android:label="Voice Call" />
+
+    <!-- Dialogs -->
+    <dialog
+        android:id="@+id/createRoom"
+        android:name="com.m3.veilchat.fragments.dialogs.CreateRoomDialog"
+        android:label="Create Room" />
+
+    <dialog
+        android:id="@+id/createWhisper"
+        android:name="com.m3.veilchat.fragments.dialogs.CreateWhisperDialog"
+        android:label="Create Whisper Link" />
+
+    <dialog
+        android:id="@+id/privacySettings"
+        android:name="com.m3.veilchat.fragments.dialogs.PrivacySettingsDialog"
+        android:label="Privacy Settings" />
+
+    <!-- Navigation Actions -->
+    <action
+        android:id="@+id/action_chats_to_chatRoom"
+        app:destination="@id/chatRoom" />
+
+    <action
+        android:id="@+id/action_discover_to_chatRoom"
+        app:destination="@id/chatRoom" />
+
+    <action
+        android:id="@+id/action_confessionBoard_to_privateChat"
+        app:destination="@id/privateChat" />
+
+    <action
+        android:id="@+id/action_global_voiceCall"
+        app:destination="@id/voiceCall" />
+
+    <!-- Add this inside the navigation element -->
+    <action
+        android:id="@+id/action_global_chatRoom"
+        app:destination="@id/chatRoom" />
+
+    <activity
+        android:id="@+id/chatRoomActivity"
+        android:name="com.m3.veilchat.activities.ChatRoomActivity"
+        android:label="Chat Room" />
+
+    <fragment
+        android:id="@+id/confessionBoard"
+        android:name="com.m3.veilchat.fragments.ConfessionBoardFragment"
+        android:label="Confessions" />
+
+</navigation>

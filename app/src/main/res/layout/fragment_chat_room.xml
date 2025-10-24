@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/veil_background">
+
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/veil_surface"
+        app:navigationIcon="@drawable/ic_arrow_back"
+        app:titleTextColor="@color/veil_text_primary" />
+
+    <TextView
+        android:id="@+id/tvCurrentPersona"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="As: Persona Name"
+        android:textColor="@color/veil_secondary"
+        android:textSize="12sp"
+        android:padding="8dp"
+        android:background="@color/veil_surface"
+        android:visibility="gone" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvMessages"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <TextView
+        android:id="@+id/tvNoMessages"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:text="No messages yet\nStart the conversation!"
+        android:textColor="@color/veil_text_secondary"
+        android:textSize="14sp"
+        android:gravity="center"
+        android:visibility="gone" />
+
+    <!-- Message Rules Selector -->
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/veil_surface"
+        app:cardCornerRadius="0dp"
+        app:cardElevation="2dp">
+
+        <RadioGroup
+            android:id="@+id/messageRulesGroup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="8dp">
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnRuleNormal"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Normal"
+                android:textSize="12sp"
+                style="@style/Widget.Material3.Button.OutlinedButton"
+                android:checkable="true" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnRuleBlink"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Blink"
+                android:textSize="12sp"
+                style="@style/Widget.Material3.Button.OutlinedButton"
+                android:checkable="true" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnRuleCipher"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Cipher"
+                android:textSize="12sp"
+                style="@style/Widget.Material3.Button.OutlinedButton"
+                android:checkable="true" />
+
+        </RadioGroup>
+
+    </com.google.android.material.card.MaterialCardView>
+
+    <!-- Message Input -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="16dp"
+        android:background="@color/veil_surface">
+
+        <EditText
+            android:id="@+id/etMessage"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="Type a message..."
+            android:textColor="@color/veil_text_primary"
+            android:textColorHint="@color/veil_text_secondary"
+            android:background="@drawable/edittext_background"
+            android:padding="12dp"
+            android:maxLines="3" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnSendMessage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Send"
+            android:layout_marginStart="8dp"
+            android:textColor="@color/white"
+            android:backgroundTint="@color/veil_secondary"
+            style="@style/Widget.Material3.Button" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tvError"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/veil_secondary"
+        android:textSize="14sp"
+        android:gravity="center"
+        android:padding="8dp"
+        android:visibility="gone" />
+
+</LinearLayout>

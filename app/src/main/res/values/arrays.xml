@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="room_types">
+        <item>Public</item>
+        <item>Private</item>
+        <item>Ephemeral</item>
+    </string-array>
+
+    <string-array name="moods">
+        <item>😊 Happy</item>
+        <item>😔 Lonely</item>
+        <item>😴 Bored</item>
+        <item>🤔 Curious</item>
+        <item>😎 Chill</item>
+        <item>🔥 Excited</item>
+        <item>😢 Sad</item>
+        <item>🤩 Excited</item>
+    </string-array>
+
+    <string-array name="interests">
+        <item>#music</item>
+        <item>#tech</item>
+        <item>#gaming</item>
+        <item>#movies</item>
+        <item>#sports</item>
+        <item>#art</item>
+        <item>#science</item>
+        <item>#random</item>
+        <item>#books</item>
+        <item>#travel</item>
+    </string-array>
+
+    <string-array name="mood_filters">
+        <item>All Moods</item>
+        <item>😊 Happy</item>
+        <item>😔 Lonely</item>
+        <item>😴 Bored</item>
+        <item>🤔 Curious</item>
+        <item>😎 Chill</item>
+        <item>🔥 Excited</item>
+    </string-array>
+
+    <string-array name="interest_filters">
+        <item>All Interests</item>
+        <item>#music</item>
+        <item>#tech</item>
+        <item>#gaming</item>
+        <item>#movies</item>
+        <item>#sports</item>
+        <item>#art</item>
+        <item>#science</item>
+    </string-array>
+
+    <string-array name="confession_categories">
+        <item>All</item>
+        <item>Love</item>
+        <item>Friendship</item>
+        <item>Family</item>
+        <item>Work</item>
+        <item>Secret</item>
+        <item>Regret</item>
+        <item>Hope</item>
+    </string-array>
+
+    <string-array name="confession_moods">
+        <item>All</item>
+        <item>😊 Happy</item>
+        <item>😔 Sad</item>
+        <item>😡 Angry</item>
+        <item>😢 Regret</item>
+        <item>❤️ Love</item>
+        <item>🤔 Confused</item>
+    </string-array>
+</resources>

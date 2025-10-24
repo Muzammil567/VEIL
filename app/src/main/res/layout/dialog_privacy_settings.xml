@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Communication Privacy"
+            android:textColor="@color/veil_text_primary"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="8dp" />
+
+        <com.google.android.material.switchmaterial.SwitchMaterial
+            android:id="@+id/switchSilentMode"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Silent Mode"
+            android:textColor="@color/veil_text_primary" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Hide typing indicators and read receipts"
+            android:textColor="@color/veil_text_secondary"
+            android:textSize="12sp"
+            android:layout_marginBottom="16dp" />
+
+        <com.google.android.material.switchmaterial.SwitchMaterial
+            android:id="@+id/switchReadReceipts"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Read Receipts"
+            android:textColor="@color/veil_text_primary" />
+
+        <com.google.android.material.switchmaterial.SwitchMaterial
+            android:id="@+id/switchTypingIndicators"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Typing Indicators"
+            android:textColor="@color/veil_text_primary" />
+
+        <com.google.android.material.switchmaterial.SwitchMaterial
+            android:id="@+id/switchOnlineStatus"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Online Status"
+            android:textColor="@color/veil_text_primary"
+            android:layout_marginTop="16dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Security &amp; Protection"
+            android:textColor="@color/veil_text_primary"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:layout_marginTop="24dp"
+            android:layout_marginBottom="8dp" />
+
+        <com.google.android.material.switchmaterial.SwitchMaterial
+            android:id="@+id/switchVanishCalls"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Vanish Calls"
+            android:textColor="@color/veil_text_primary" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Automatically delete call logs after ending"
+            android:textColor="@color/veil_text_secondary"
+            android:textSize="12sp"
+            android:layout_marginBottom="16dp" />
+
+        <com.google.android.material.switchmaterial.SwitchMaterial
+            android:id="@+id/switchScreenshotProtection"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Screenshot Protection"
+            android:textColor="@color/veil_text_primary" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Prevent screenshots in chat rooms"
+            android:textColor="@color/veil_text_secondary"
+            android:textSize="12sp"
+            android:layout_marginBottom="16dp" />
+
+        <com.google.android.material.switchmaterial.SwitchMaterial
+            android:id="@+id/switchSecretInbox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Secret Inbox"
+            android:textColor="@color/veil_text_primary" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Enable password-protected hidden inbox"
+            android:textColor="@color/veil_text_secondary"
+            android:textSize="12sp" />
+
+    </LinearLayout>
+
+</ScrollView>

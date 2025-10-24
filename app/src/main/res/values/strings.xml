@@ -1,0 +1,133 @@
+<resources>
+    <string name="app_name">VEIL</string>
+
+    <!-- Auth -->
+    <string name="welcome_to_veil">Welcome to VEIL</string>
+    <string name="tagline">Your identity, your rules</string>
+    <string name="continue_anonymously">Continue Anonymously</string>
+    <string name="link_email_later">Link email later for backup</string>
+    <string name="creating_account">Creating your anonymous account…</string>
+
+    <!-- Navigation -->
+    <string name="home">Home</string>
+    <string name="chats">Chats</string>
+    <string name="discover">Discover</string>
+    <string name="personas">Personas</string>
+    <string name="profile">Profile</string>
+
+    <!-- Common -->
+    <string name="loading">Loading…</string>
+    <string name="error_occurred">An error occurred</string>
+    <string name="retry">Retry</string>
+    <string name="success">Success</string>
+    <string name="username_format">\@%1$s</string>
+    <string name="ok">OK</string>
+    <string name="cancel">Cancel</string>
+    <string name="create">Create</string>
+    <string name="later">Later</string>
+    <string name="leave">Leave</string>
+    <string name="delete">Delete</string>
+    <string name="unlock">Unlock</string>
+    <string name="lock">Lock</string>
+    <string name="apply">Apply</string>
+
+    <!-- App Features -->
+    <string name="why_veil_chat_title">Why VEIL Chat?</string>
+    <string name="app_features_message">
+        "🔒 **Complete Privacy** - No phone numbers, no emails\n\n"
+        "🎭 **Multiple Personas** - Be different people in different chats\n\n"
+        "⚡ **Real-time Chat** - Instant messaging with encryption\n\n"
+        "🌐 **Anonymous Rooms** - Join topic-based chat rooms\n\n"
+        "💬 **Confession Board** - Share secrets anonymously\n\n"
+        "🔐 **Secret Inbox** - Password-protected hidden chats\n\n"
+        "📞 **Voice Calls** - Encrypted voice conversations\n\n"
+        "🎯 **Mood Matching** - Find people by emotional state"
+    </string>
+    <string name="get_started">Get Started</string>
+    <string name="share_app">Share App</string>
+
+    <!-- Sharing -->
+    <string name="share_app_url">https://play.google.com/store/apps/details?id=com.m3.veilchat</string>
+    <string name="share_app_text">Join me on VEIL - The most private anonymous chat app! No phone numbers, no emails, just pure privacy. Download now: %1$s\n\n#VEILChat #AnonymousChat</string>
+    <string name="share_app_subject">Join me on VEIL Chat</string>
+    <string name="share_app_chooser_title">Share VEIL Chat</string>
+    <string name="whatsapp_not_installed">WhatsApp not installed</string>
+    <string name="telegram_not_installed">Telegram not installed</string>
+    <string name="share_username_text">Hey! My VEIL username is: @%1$s\n\nFind me on VEIL Chat - the private anonymous messaging app. Download: %2$s\n\nOnce you install it, search for my username to connect!</string>
+    <string name="share_username_subject">My VEIL Chat Username</string>
+    <string name="share_username_chooser_title">Share Username</string>
+    <string name="share_room_invite_text">Join me in '%1$s' room on VEIL Chat! Room ID: %2$s\n\nDownload VEIL first: %3$s\nThen search for room ID: %2$s\n\nSee you there! 👻</string>
+    <string name="share_room_invite_subject">Join my VEIL Chat Room</string>
+    <string name="share_room_invite_chooser_title">Invite to Room</string>
+
+    <!-- Plurals -->
+    <plurals name="participant_count">
+        <item quantity="one">%d participant</item>
+        <item quantity="other">%d participants</item>
+    </plurals>
+    <plurals name="persona_count">
+        <item quantity="one">%d persona created</item>
+        <item quantity="other">%d personas created</item>
+    </plurals>
+
+    <!-- Home Fragment -->
+    <string name="current_persona">Current Persona: %1$s</string>
+    <string name="no_persona">Current Persona: None - Create one to start chatting!</string>
+
+    <!-- Profile Fragment -->
+    <string name="anonymous_id_format">ID: %1$s</string>
+    <string name="email_verified_format">Verified: %1$s</string>
+    <string name="invite_friends_title">Invite Friends</string>
+    <string-array name="invite_options">
+        <item>Share App Download Link</item>
+        <item>Share via WhatsApp</item>
+        <item>Share My Username</item>
+        <item>Create Whisper Link</item>
+        <item>Share to Telegram</item>
+    </string-array>
+
+    <!-- ChatRoom Fragment -->
+    <string name="share_cipher_key_text">VEIL Cipher Key for room: %1$s\n\nKey: %2$s\n\nShare this key securely with intended recipients.</string>
+    <string name="share_cipher_key_title">Share Cipher Key</string>
+    <string name="encryption_info_toast">Messages will be encrypted with room key</string>
+    <string name="current_persona_display">As: %1$s</string>
+    <string name="switch_persona_title">Switch Persona</string>
+    <string name="no_personas_title">No Personas</string>
+    <string name="no_personas_message">You need to create a persona first to chat. Create one now?</string>
+    <string name="room_info_title">Room Info</string>
+    <string name="room_info_message">Room: %1$s\nID: %2$s</string>
+    <string name="leave_room_title">Leave Room</string>
+    <string name="leave_room_message">Are you sure you want to leave this room?</string>
+    <string name="new_cipher_key_title">New Cipher Key Generated</string>
+    <string name="existing_cipher_key_title">Existing Cipher Key</string>
+
+    <!-- Personas Fragment -->
+    <string name="create_persona_title">Create New Persona</string>
+    <string name="persona_name_required">Persona name is required</string>
+    <string name="persona_details_title">Persona Details</string>
+    <string name="persona_details_message">Name: %1$s\nDisplay Name: %2$s\nMood: %3$s\nInterest: %4$s\nCreated: %5$s</string>
+    <string name="switch_to_this_persona">Switch to this</string>
+    <string name="switched_to_persona_status">Switched to: %1$s</string>
+
+    <!-- Secret Inbox Fragment -->
+    <string name="unlock_secret_inbox_message">Double tap or long press to unlock secret inbox</string>
+    <string name="password_required">Password is required</string>
+    <string name="passwords_do_not_match">Passwords do not match</string>
+    <string name="password_too_short">Password must be at least 4 characters</string>
+    <string name="wrong_password_unlock_message">Wrong password. Double tap to try again.</string>
+    <string name="unable_to_decrypt_message">🔒 Unable to decrypt message</string>
+    <string name="secret_message_title">Secret Message</string>
+    <string name="unlock_message_title">Unlock Message</string>
+    <string name="message_expired_title">Message Expired</string>
+    <string name="message_expired_message">This message has expired or been destroyed and can no longer be viewed.</string>
+    <string name="lock_message_title">Lock Message</string>
+    <string name="wrong_password">Wrong password</string>
+    <string name="delete_secret_message_title">Delete Secret Message</string>
+    <string name="delete_secret_message_message">Are you sure you want to delete this message? This action cannot be undone.</string>
+
+    <!-- Confession Board Fragment -->
+    <string name="confession_posted_toast">Confession posted anonymously!</string>
+    <string name="filter_confessions_title">Filter Confessions</string>
+    <string name="filter_confessions_message">Select category and mood to filter</string>
+
+</resources>

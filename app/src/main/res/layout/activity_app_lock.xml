@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/veil_background"
+    android:padding="24dp"
+    android:gravity="center">
+
+    <!-- App Logo -->
+    <ImageView
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:src="@drawable/ic_veil_logo"
+        android:contentDescription="VEIL"
+        android:layout_marginBottom="32dp" />
+
+    <!-- Title -->
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Unlock VEIL"
+        android:textColor="@color/veil_text_primary"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:gravity="center" />
+
+    <!-- Description -->
+    <TextView
+        android:id="@+id/tvDescription"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Enter your PIN to continue"
+        android:textColor="@color/veil_text_secondary"
+        android:textSize="16sp"
+        android:gravity="center"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="32dp" />
+
+    <!-- Password Dots -->
+    <LinearLayout
+        android:id="@+id/passwordContainer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginBottom="48dp">
+
+        <View
+            android:id="@+id/dot1"
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:background="@drawable/dot_empty"
+            android:layout_margin="8dp" />
+
+        <View
+            android:id="@+id/dot2"
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:background="@drawable/dot_empty"
+            android:layout_margin="8dp" />
+
+        <View
+            android:id="@+id/dot3"
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:background="@drawable/dot_empty"
+            android:layout_margin="8dp" />
+
+        <View
+            android:id="@+id/dot4"
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:background="@drawable/dot_empty"
+            android:layout_margin="8dp" />
+
+    </LinearLayout>
+
+    <!-- Number Pad -->
+    <GridLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:columnCount="3"
+        android:rowCount="4"
+        android:alignmentMode="alignBounds">
+
+        <!-- Row 1 -->
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn1"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:text="1"
+            android:textSize="24sp"
+            android:layout_margin="8dp"
+            style="@style/AppLockButtonStyle" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn2"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:text="2"
+            android:textSize="24sp"
+            android:layout_margin="8dp"
+            style="@style/AppLockButtonStyle" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn3"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:text="3"
+            android:textSize="24sp"
+            android:layout_margin="8dp"
+            style="@style/AppLockButtonStyle" />
+
+        <!-- Row 2 -->
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn4"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:text="4"
+            android:textSize="24sp"
+            android:layout_margin="8dp"
+            style="@style/AppLockButtonStyle" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn5"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:text="5"
+            android:textSize="24sp"
+            android:layout_margin="8dp"
+            style="@style/AppLockButtonStyle" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn6"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:text="6"
+            android:textSize="24sp"
+            android:layout_margin="8dp"
+            style="@style/AppLockButtonStyle" />
+
+        <!-- Row 3 -->
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn7"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:text="7"
+            android:textSize="24sp"
+            android:layout_margin="8dp"
+            style="@style/AppLockButtonStyle" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn8"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:text="8"
+            android:textSize="24sp"
+            android:layout_margin="8dp"
+            style="@style/AppLockButtonStyle" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn9"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:text="9"
+            android:textSize="24sp"
+            android:layout_margin="8dp"
+            style="@style/AppLockButtonStyle" />
+
+        <!-- Row 4 -->
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnBiometric"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:text="👆"
+            android:textSize="20sp"
+            android:layout_margin="8dp"
+            style="@style/AppLockButtonStyle" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn0"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:text="0"
+            android:textSize="24sp"
+            android:layout_margin="8dp"
+            style="@style/AppLockButtonStyle" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnDelete"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:text="⌫"
+            android:textSize="20sp"
+            android:layout_margin="8dp"
+            style="@style/AppLockButtonStyle" />
+
+    </GridLayout>
+
+    <!-- Biometric Hint -->
+    <TextView
+        android:id="@+id/tvUseBiometric"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Or use biometric authentication"
+        android:textColor="@color/veil_text_secondary"
+        android:textSize="14sp"
+        android:gravity="center"
+        android:layout_marginTop="24dp" />
+
+    <!-- Forgot Password -->
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnForgot"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Forgot PIN?"
+        android:textSize="14sp"
+        android:layout_marginTop="16dp"
+        style="@style/Widget.Material3.Button.TextButton"
+        android:textColor="@color/veil_text_secondary" />
+
+</LinearLayout>
